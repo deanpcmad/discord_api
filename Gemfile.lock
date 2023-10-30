@@ -8,6 +8,7 @@ GEM
   remote: https://rubygems.org/
   specs:
     base64 (0.1.1)
+    dotenv (2.8.1)
     faraday (2.7.11)
       base64
       faraday-net_http (>= 2.0, < 3.1)
@@ -22,6 +23,7 @@ PLATFORMS
 
 DEPENDENCIES
   discord-api!
+  dotenv
   minitest (~> 5.0)
   rake (~> 13.0)
 

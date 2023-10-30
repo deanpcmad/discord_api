@@ -2,10 +2,16 @@
 # frozen_string_literal: true
 
 require "bundler/setup"
-require "discord/api"
+require "discord"
+
+# Load environment variables from .env file
+require 'dotenv/load'
 
 # You can add fixtures and/or initialization code here to make experimenting
 # with your gem easier. You can also use a different console, if you like.
+
+@user_client = Discord::Client.new(user_access_token: ENV["DISCORD_USER_ACCESS_TOKEN"])
+@bot_client = Discord::Client.new(bot_access_token: ENV["DISCORD_BOT_ACCESS_TOKEN"])
 
 require "irb"
 IRB.start(__FILE__)
