@@ -1,6 +1,6 @@
 # Discord API
 
-This is a Ruby wrapper for the Discord API. It is currently in development and is not ready for use.
+This is a Ruby wrapper for the Discord HTTP API. **Currently in development**
 
 ## Installation
 
