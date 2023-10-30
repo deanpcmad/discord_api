@@ -7,7 +7,7 @@ This is a Ruby wrapper for the Discord API. It is currently in development and i
 Add this line to your application's Gemfile:
 
 ```ruby
-gem "discord-api"
+gem "discord_api"
 ```
 
 ## Usage

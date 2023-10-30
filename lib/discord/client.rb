@@ -25,7 +25,7 @@ module Discord
         end
 
         conn.headers = {
-          "User-Agent" => "discord-api/v#{VERSION} (github.com/deanpcmad/discord-api)"
+          "User-Agent" => "discord_api/v#{VERSION} (github.com/deanpcmad/discord_api)"
         }
 
         conn.request :json

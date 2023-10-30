@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    discord-api (0.0.1)
+    discord_api (0.0.1)
       faraday (~> 2.0)
 
 GEM
@@ -22,7 +22,7 @@ PLATFORMS
   x86_64-linux
 
 DEPENDENCIES
-  discord-api!
+  discord_api!
   dotenv
   minitest (~> 5.0)
   rake (~> 13.0)

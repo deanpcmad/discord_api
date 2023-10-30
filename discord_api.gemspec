@@ -3,7 +3,7 @@
 require_relative "lib/discord/version"
 
 Gem::Specification.new do |spec|
-  spec.name = "discord-api"
+  spec.name = "discord_api"
   spec.version = Discord::VERSION
   spec.authors = ["Dean Perry"]
   spec.email = ["deanperry@fastmail.com"]
