@@ -11,8 +11,12 @@ module Discord
   autoload :Object, "discord/object"
 
   autoload :UsersResource, "discord/resources/users"
+  autoload :ChannelsResource, "discord/resources/channels"
+  autoload :MessagesResource, "discord/resources/messages"
 
   autoload :User, "discord/objects/user"
   autoload :Guild, "discord/objects/guild"
+  autoload :Channel, "discord/objects/channel"
+  autoload :Message, "discord/objects/message"
 
 end

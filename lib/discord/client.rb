@@ -14,6 +14,14 @@ module Discord
       UsersResource.new(self)
     end
 
+    def channels
+      ChannelsResource.new(self)
+    end
+
+    def messages
+      MessagesResource.new(self)
+    end
+
     def connection
       @connection ||= Faraday.new(BASE_URL) do |conn|
         if user_access_token
