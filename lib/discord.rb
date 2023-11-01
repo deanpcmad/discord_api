@@ -13,6 +13,7 @@ module Discord
   autoload :UsersResource, "discord/resources/users"
   autoload :ChannelsResource, "discord/resources/channels"
   autoload :MessagesResource, "discord/resources/messages"
+  autoload :GuildsResource, "discord/resources/guilds"
 
   autoload :User, "discord/objects/user"
   autoload :Guild, "discord/objects/guild"

@@ -14,6 +14,10 @@ module Discord
       UsersResource.new(self)
     end
 
+    def guilds
+      GuildsResource.new(self)
+    end
+
     def channels
       ChannelsResource.new(self)
     end
