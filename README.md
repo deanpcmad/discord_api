@@ -28,5 +28,11 @@ Firstly you'll need to set either a user token or bot token. Some endpoints are 
 
 ```ruby
 # Get the current user
+# Required scope: identify
+# Required scopes if you want the user's email: identify email
 @client.users.me
+
+# Get the user's guilds
+# Required scope: guilds
+@client.users.guilds
 ```

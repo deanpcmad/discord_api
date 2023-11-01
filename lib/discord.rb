@@ -13,5 +13,6 @@ module Discord
   autoload :UsersResource, "discord/resources/users"
 
   autoload :User, "discord/objects/user"
+  autoload :Guild, "discord/objects/guild"
 
 end

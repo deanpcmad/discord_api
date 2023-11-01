@@ -6,13 +6,13 @@ module Discord
       body = response.body
 
       new(
-        data: body["data"].map { |attrs| type.new(attrs) },
-        total: body["data"].count,
-        cursor: body.dig("pagination", "cursor")
+        data: body.map { |attrs| type.new(attrs) },
+        total: body.count,
+        # cursor: body.dig("pagination", "cursor")
       )
     end
 
-    def initialize(data:, total:, cursor:)
+    def initialize(data:, total:, cursor:nil)
       @data = data
       @total = total
       @cursor = cursor.nil? ? nil : cursor
