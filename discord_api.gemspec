@@ -8,7 +8,7 @@ Gem::Specification.new do |spec|
   spec.authors = ["Dean Perry"]
   spec.email = ["deanperry@fastmail.com"]
 
-  spec.summary = "Ruby wrapper for the Discord HTTP API"
+  spec.summary = "Ruby library for the Discord HTTP API"
   spec.homepage = "https://github.com/deanpcmad/discord_api"
   spec.license = "MIT"
   spec.required_ruby_version = ">= 2.6.0"
