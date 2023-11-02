@@ -75,3 +75,32 @@ These endpoints are only accessible using a bot token.
 # Bulk delete messages
 @client.messages.bulk_delete(channel_id: 123123, ids: [123123, 321321])
 ```
+
+### Guilds/Servers
+
+These endpoints are only accessible using a bot token.
+
+```ruby
+# Retrieve a Guild's details
+@client.guilds.retrieve(id: 123123)
+
+# Update a Guild's details
+# https://discord.com/developers/docs/resources/guild#modify-guild
+@client.guilds.update(id: 123123, name: "new-guild-name")
+
+# Retrieve a list of a Guild's channels
+@client.guilds.channels(guild: 123123)
+
+# Create a Guild channel
+# https://discord.com/developers/docs/resources/guild#create-guild-channel
+@client.guilds.create_channel(guild: 123123, name: "new-channel-name")
+```
+
+## Contributing
+
+Bug reports and pull requests are welcome on GitHub at https://github.com/deanpcmad/discord_api.
+
+## License
+
+The gem is available as open source under the terms of the [MIT License](https://opensource.org/licenses/MIT).
+
