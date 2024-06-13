@@ -47,6 +47,5 @@ module Discord
         conn.adapter adapter, @stubs
       end
     end
-
   end
 end

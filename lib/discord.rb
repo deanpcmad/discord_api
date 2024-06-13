@@ -3,7 +3,6 @@ require "json"
 require "discord/version"
 
 module Discord
-
   autoload :Client, "discord/client"
   autoload :Collection, "discord/collection"
   autoload :Error, "discord/error"
@@ -19,5 +18,4 @@ module Discord
   autoload :Guild, "discord/objects/guild"
   autoload :Channel, "discord/objects/channel"
   autoload :Message, "discord/objects/message"
-
 end

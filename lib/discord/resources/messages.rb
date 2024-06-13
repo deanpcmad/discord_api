@@ -1,6 +1,5 @@
 module Discord
   class MessagesResource < Resource
-
     def list(channel:, **params)
       response = get_request("channels/#{channel}/messages", params: params)
       Collection.from_response(response, type: Message)
@@ -25,8 +24,7 @@ module Discord
     end
 
     def bulk_delete(channel:, messages:)
-      post_request("channels/#{channel}/messages/bulk-delete", body: {messages: messages})
+      post_request("channels/#{channel}/messages/bulk-delete", body: { messages: messages })
     end
-
   end
 end

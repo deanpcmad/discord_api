@@ -1,6 +1,5 @@
 module Discord
   class GuildsResource < Resource
-
     def retrieve(id:)
       Guild.new get_request("guilds/#{id}").body
     end
@@ -19,6 +18,5 @@ module Discord
       response = post_request("guilds/#{guild}/channels", body: params)
       Channel.new response.body
     end
-
   end
 end

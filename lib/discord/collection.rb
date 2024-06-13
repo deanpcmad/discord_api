@@ -12,7 +12,7 @@ module Discord
       )
     end
 
-    def initialize(data:, total:, cursor:nil)
+    def initialize(data:, total:, cursor: nil)
       @data = data
       @total = total
       @cursor = cursor.nil? ? nil : cursor
